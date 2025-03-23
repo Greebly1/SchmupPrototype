@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1vnth11j1gom"]
+
+[ext_resource type="Script" uid="uid://fxfcqm1gjrls" path="res://Scripts/touhou_pawn.gd" id="1_hf060"]
+[ext_resource type="Texture2D" uid="uid://cd38grjuhrot0" path="res://kenney_space-shooter-redux/PNG/playerShip3_blue.png" id="1_spf3x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_spf3x"]
+radius = 27.0185
+
+[node name="TouhouPawn" type="Node2D"]
+script = ExtResource("1_hf060")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_spf3x")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+motion_mode = 1
+
+[node name="CircleColission" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 9)
+shape = SubResource("CircleShape2D_spf3x")

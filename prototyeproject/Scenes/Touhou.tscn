@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4b5c0a6ycmre"]
+
+[ext_resource type="PackedScene" uid="uid://d1vnth11j1gom" path="res://TouhouPawn.tscn" id="1_8hdxw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TouhouPawn" parent="." instance=ExtResource("1_8hdxw")]
